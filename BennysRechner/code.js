@@ -12,17 +12,30 @@ let resultat = '';
 
 
 function appendOperation(nummern) {
-    anzeige.textContent = "";
-    const AUFGABE =(aufgabeA, resultat, zahlA, nummern, callback) => {
-        if (aufgabeA <= 0)
+    anzeige = document.querySelector('#ergebnisBereich');
+    console.log("Schritt 1 -> " + anzeige.textContent)
+    aufgabeA = anzeige.textContent + ('');
+    console.log("Schritt 2 -> " + aufgabeA)
+    //parseFloat.aufgabeA;
+    //console.log("Schritt 3 -> " + aufgabeA)
+    const AUFGABE =(aufgabeA, zahlA, nummern, callback) => {
+        if (aufgabeA <= ('')) {
             return callback(zahlA += nummern)
-        if (aufgabeA === resultat)
-            return callback(resultat += nummern)
-        if (aufgabeA <= '')
+        }
+        if (aufgabeA === resultat) {
+            return callback(aufgabeA = zahlA += nummern)
+        } 
+        if (aufgabeA >= ('')) {
             return callback(aufgabeA += nummern)
+        }    
     }
    
-   
+    aufgabe = AUFGABE(aufgabeA, zahlA, nummern, aufgabe => aufgabe)
+    console.log("Schritt 7 -> " + aufgabe)
+    anzeige.textContent = aufgabeA;
+    console.log("Schritt 8 -> " + aufgabe)
+}
+
   /* 
     if (aufgabeA <= 0) {
         anzeige.textContent = zahlA += nummern;
@@ -32,31 +45,37 @@ function appendOperation(nummern) {
         anzeige.textContent = aufgabeA += nummern;
     }
 */
-}
+
 
 function pruefung(operator) {
-    anzeige.textContent = zahlA += operator;
-    aufgabeA = anzeige.textContent;
+    anzeige.textContent = aufgabe += operator;
+    aufgabe = anzeige.textContent;
 }
 
-function calculateResult() {
-    aufgabe = document.querySelector('#ergebnisBereich').innerHTML;
+function calculateResult(operator) {
     let aufgabeSplit = aufgabe.split(' ');
+    console.log("Schritt 1.1 " + aufgabeSplit);
     zahlA = aufgabeSplit[0];
     operator = aufgabeSplit[1];
     zahlB = aufgabeSplit[2];
+    console.log("Schritt 2.1 " + zahlA + operator + zahlB);
     
     const RESULTAT = (operator, zahlA, zahlB, callback) => {
-        if (operator === "+")
+        if (operator === "+") {
             return callback(zahlA + zahlB)
-        if (operator === "-")
+        }
+        if (operator === "-") {
             return callback(zahlA - zahlB)
-        if (operator === "*")
+        }
+        if (operator === "*") {
             return callback(zahlA * zahlB)
-        if (operator === "/")
+        }
+        if (operator === "/") {
             return callback(zahlA / zahlB)
+        }
     
     }
+
 
     console.log(zahlA + "-" + operator + "-" + zahlB);
     resultat = RESULTAT(operator, zahlA, zahlB, resultat => resultat)
@@ -119,7 +138,7 @@ function deleteLast() {
 
 function deleteAll() {
     document.querySelector('#ergebnisBereich').innerHTML = '',
-    zahlA = '', zahlB = ''; resultat = ''; aufgabeA = '';
+    zahlA = '', zahlB = ''; resultat = ''; aufgabeA = ''; aufgabe = '';
     }
 
 
