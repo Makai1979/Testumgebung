@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kombinator mehrerer Selektoren</title>
+
+    <!-- Das ist der Kombinator-Selektor - 
+        folgende Arten gibt es - 
+
+        1.) "a, b" - Komma: Selektiert alle a- und b-Elemente  - dann {}
+
+        2.) "a b" - Leerzeichen: Selektiert alle b-Elemente, welche sich 
+        innerhalb eines a-Elements befinden - dann {}
+
+        3.) "a > b" - Größer-als: Selektiert alle b-Elemente, welche sich 
+        direkt innerhalb eines a-Elements befinden, nicht eine Ebene tiefer - dann {}
+
+        4.) "a ~ b" - Tilde: Selektiert alle Geschwister b-Elemente, 
+        die nach einem a-Element folgen - dann {}
+
+        5.) "a + b" - Plus: Selektiert alle Geschwister b-Elemente, 
+        welche sich direkt nach einem a-Element befinden - dann {} 
+    
+        Geschwister-Elemente: Elemente, die auf der gleichen Ebene liegen.
+    -->
+
+    <style>
+        div, header {
+            background-color: yellow;
+        }
+        h2, #blue-paragraph {
+            color: blue;
+        }
+        header p {
+            text-decoration: underline;
+        }
+        div .beispielklasse {
+            text-decoration: line-through;
+        }
+        header > h1 {
+            color: coral;
+        }
+        #test ~ li {
+            font-weight: 800;
+        }
+        #test + li {
+            text-decoration: underline;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+        <h1 class="beispielklasse">Selektoren erklärt!</h1>
+        <p id="blue-paragraph">Lerne Schritt für Schritt den Umgang mit Selektoren</p>
+    </header>
+
+    <div>
+        <h2 class="beispielklasse">Die unterschiedlichen Selektoren Arten</h2>
+        <ul>
+            <li>Typ-Selektoren</li>
+            <li id="test">Universal-Selektor</li>
+            <li>ID-Selektoren</li>
+            <li>Klassen-Selektoren</li>
+        </ul>
+    </div>
+
+    <div>
+        <p>Slektoren zu verwenden macht Spaß!</p>
+    </div>
+
+    <footer>
+        <h2>Wichtige Links</h2>
+        <a href="#" target="#">Impressum</a>
+        <a href="#">Datenschutzerklärung</a>
+        <a href="https://www.programmieren-starten.de" target="_blank">Startseite</a>
+    </footer>
+</body>
+
+</html>

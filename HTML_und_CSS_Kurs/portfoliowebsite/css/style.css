@@ -1,0 +1,380 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding-bottom: 20px;
+}
+
+a {
+    color: #3A3A3A;
+    text-decoration: none;
+}
+
+p {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+/* --- Hilfsklasse --- */
+
+.standard-container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.text-highlighted {
+    color: coral;
+}
+
+.btn {
+    display: block;
+    font-size: 20px;
+    background-color: #3A3A3A;
+    color: coral;
+    padding: 10px 15px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 15px 0px;
+}
+
+.btn:hover {
+    background-color: coral;
+    color: white;
+}
+
+/* --- Navigationsleiste --- */
+
+#main-nav {
+    background-color: #3A3A3A;
+}
+
+#main-nav:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#main-nav h1 {
+    float: left;
+    color: coral;
+    padding-top: 20px;
+}
+
+#main-nav a {
+    color: white;
+}
+
+#main-nav ul {
+    float: right;
+    list-style: none;
+}
+
+#main-nav ul li {
+    float: left;
+}
+
+#main-nav ul li a {
+    display: block;
+    font-size: 24px;
+    padding: 20px;
+    text-align: center;
+}
+
+#main-nav ul li a:hover {
+    background-color: coral;
+    color: white;
+}
+
+#main-nav ul li a.active-page {
+    background-color: coral;
+    color: white;
+}
+
+
+/* --- Willkommens Sektion --- */
+
+#welcome {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/Banner_Light.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+}
+
+#welcome:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#welcome .welcome-content {
+    float: right;
+    width: 70%;
+    color: white;
+    padding: 130px 50px;
+}
+
+#welcome .welcome-img {
+    float: left;
+    width: 30%;
+    padding-top: 40px;
+}
+
+#welcome .welcome-img img {
+    width: 100%;
+    border-radius: 50px;
+}
+
+#welcome .welcome-content h2 {
+    font-size: 40px;
+}
+
+/* --- About Sektion --- */
+
+#about {
+    background-color: #3A3A3A;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#about:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+#about .about-content {
+    float: left;
+    width: 60%;
+    color: white;
+    padding: 20px;
+}
+
+#about .about-img {
+    float: left;
+    width: 40%;
+    padding: 20px;
+    margin-top: 110px;
+}
+
+#about .about-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#about .about-content h2 {
+    font-size: 40px;
+}
+
+/* --- Skill Sektion --- */
+
+#skills {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#skills:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#skills .skill {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    padding: 35 px;
+}
+
+#skills .material-symbols-outlined {
+    font-size: 100px;
+    color: coral;
+}
+
+/* --- Contact Heading Sektion --- */
+
+#contact-heading {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/Banner_Light.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+}
+
+#contact-heading .heading-content {
+    color: white;
+    padding: 130px 0px;
+}
+
+#contact-heading .heading-content h2 {
+    font-size: 40px;
+}
+
+#contact-heading .heading-content p {
+    font-size: 20px;
+}
+
+/* --- Contact Options Sektion --- */
+
+#contact-options {
+    margin-top: -150px;
+    padding-bottom: 100px;
+}
+
+#contact-options .contact-option {
+    float: left;
+    width: 31.33%;
+    margin: 1%;
+    text-align: center;
+    padding: 35px;
+    background-color: #3A3A3A;
+    min-height: 300px;
+    border-radius: 10%;
+}
+
+#contact-options .contact-option h3 {
+    font-size: 25px;
+    color: coral;
+    padding-top: 15px;
+}
+
+#contact-options .contact-option p {
+    color: white;
+    line-height: 1.7em;
+}
+
+#contact-options .material-symbols-outlined {
+    font-size: 50px;
+    color: white;
+}
+
+#contact-options:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* --- Datenschutz Sektion --- */
+
+#datenschutz-heading {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/Banner_Light.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+}
+
+#datenschutz-heading .heading-content {
+    color: white;
+    padding: 130px 0px;
+}
+
+#datenschutz-heading .heading-content h2 {
+    font-size: 40px;
+}
+
+#datenschutz-heading .heading-content h3 {
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+#datenschutz-heading .heading-content p {
+    font-size: 20px;
+}
+
+#datenschutz-heading .heading-content .balkenkurz {
+    width: 300px;
+    height: 2px;
+    background-color: coral;
+    margin: 0;
+}
+
+#datenschutz-heading .heading-content .balkenlang {
+    width: 800px;
+    height: 2px;
+    background-color: coral;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#datenschutz-heading .heading-content #balkenlang:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* --- Impressum Sektion --- */
+
+#impressum-heading {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/Banner_Light.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+}
+
+#impressum-heading .heading-content {
+    color: white;
+    padding: 130px 0px;
+}
+
+#impressum-heading .heading-content h2 {
+    font-size: 40px;
+}
+
+#impressum-heading .heading-content h3 {
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+#impressum-heading .heading-content p {
+    font-size: 20px;
+}
+
+#impressum-heading .heading-content .balkenkurz {
+    width: 300px;
+    height: 2px;
+    background-color: coral;
+    margin: 0;
+}
+
+#impressum-heading .heading-content .balkenlang {
+    width: 800px;
+    height: 2px;
+    background-color: coral;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#impressum-heading .heading-content #balkenlang:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* --- Footer --- */
+
+#main-footer {
+    background-color: #3A3A3A;
+    min-height: 120px;
+    padding: 52px;
+}
+
+#main-footer p {
+    text-align: center;
+    color: white;
+}
+
+#main-footer p a {
+    color: white;
+}
+
+#main-footer a.active-page {
+    color: coral;
+}

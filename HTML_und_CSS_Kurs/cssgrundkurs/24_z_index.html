@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>z-Index</title>
+  <style>
+    div {
+      width: 200px;
+      height: 200px;
+      position: relative;
+    }
+
+    header {
+      position: relative;
+      z-index: 1;
+    }
+
+    #div-1 {
+      background-color: red;
+    }
+
+    #div-2 {
+      background-color: green;
+      left: 75px;
+      bottom: 75px;
+      z-index: 20;
+    }
+
+    #div-3 {
+      background-color: hotpink;
+      left: 150px;
+      bottom: 150px;
+      z-index: 5;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div id="div-1">
+      Div 1
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div id="div-2">
+      Div 2
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+  </header>
+  <div id="div-3">
+    Div 3
+    <p>Lorem ipsum dolor sit amet.</p>
+  </div>
+</body>
+</html>

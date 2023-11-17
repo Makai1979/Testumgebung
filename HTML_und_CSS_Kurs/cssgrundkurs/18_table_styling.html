@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabellen stylen</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .custom-table {
+            border-collapse: collapse;
+            width: 35%;
+            font-size: 15px;
+        }
+
+        .custom-table th, .custom-table td {
+            padding: 12px;
+        }
+       
+        .custom-table thead tr {
+            text-align: left;
+            background-color: rgb(48, 48, 177);
+            color: white;
+        }
+
+        .custom-table tbody tr:nth-child(even) {
+            background-color: rgb(236, 238, 248);
+        }
+
+        .custom-table th:first-of-type {
+            border-top-left-radius: 10px;
+        }
+
+        .custom-table th:last-of-type {
+            border-top-right-radius: 10px;
+        }
+
+        .custom-table #Endleft {
+            border-bottom-left-radius: 10px;
+        }
+
+        .custom-table #Endright {
+            border-bottom-right-radius: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <table class="custom-table">
+        <thead>
+            <tr>
+                <th>Kundennummer</th>
+                <th>E-Mail</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>948847</td>
+                <td>max.mustermann@gmail.com</td>
+                <td>Aktiv</td>
+            </tr>
+            <tr>
+                <td>985673</td>
+                <td>claudi.muster@gmail.com</td>
+                <td>Aktiv</td>
+            </tr>
+            <tr>
+                <td>998845</td>
+                <td>xaver.muster@gmail.com</td>
+                <td>Inaktiv</td>
+            </tr>
+            <tr>
+                <td>243148</td>
+                <td>manfred.muster@gmail.com</td>
+                <td>Aktiv</td>
+            </tr>
+            <tr>
+                <td>332893</td>
+                <td>gustav.muster@gmail.com</td>
+                <td>Aktiv</td>
+            </tr>
+            <tr>
+                <td id="Endleft">563835</td>
+                <td>tanja.muster@gmail.com</td>
+                <td id="Endright">Inaktiv</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
