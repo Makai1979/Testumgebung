@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <title>To-Do-Liste</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="headBox">
+            <div id="headGround">
+                <h2>Benny´s To-Do-Liste</h2>
+            </div>
+        </div>
+
+        <div class="coreBox">
+            <div id="coreGround">
+                <h5 id="coreHeadline">Trage die Aufgabe ein:</h5>
+                <div id="coreInputMask">
+                    <input id="coreInput" type="text" placeholder="Aufgabe eingeben...">
+                    <button id="coreSubmit">Send</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="listBox">
+            <table id="listTable">
+                <h5 id="listHeadline">Aufgabenliste</h5>
+                <thead>
+                    <tr>
+                        <th id="thAufgabe">Aufgabe</th>
+                        <th id="thDate">Erstellung</th>
+                        <th id="thDate">Fällig</th>
+                        <th id="thEnd">Erl.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="thAufgabe">1</td>
+                        <td id="thDate">2</td>
+                        <td id="thDate">3</td>
+                        <td id="thEnd">4</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
