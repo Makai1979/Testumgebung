@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <script rel="script" src="jquery.js"></script>
     <title>To-Do-Liste</title>
 </head>
 
@@ -24,37 +25,37 @@
                 <h5 id="coreHeadline">Trage die Aufgabe ein:</h5>
                 <form id="coreInputMask">
                     <input id="coreInputTask" type="text" placeholder="Aufgabe eingeben..." required>
-                    <input id="coreInputBegin" type="date" placeholder="Aufgabe eingeben...">
-                    <input id="coreInputEnd" type="date" placeholder="Aufgabe eingeben...">
-                    <button id="coreInput" type="submit">Send</button>
+                    <input id="coreInputBegin" type="date" placeholder="Aufgabe eingeben..." required>
+                    <input id="coreInputEnd" type="date" placeholder="Aufgabe eingeben..." required>
+                    <button type="submit" onclick="createTask()">Anlegen</button>
                 </form>
             </div>
-
         </div>
 
         <div class="listBox">
             <table id="listTable">
-                <h5 id="listHeadline">Aufgabenliste</h5>
+                <h3 id="listHeadline">Aufgabenliste</h3>
                 <thead>
                     <tr>
-                        <th id="thAufgabe">Aufgabe</th>
-                        <th id="thDate">Erstellung</th>
-                        <th id="thDate">Fällig</th>
-                        <th id="thEnd">Erl.</th>
+                        <th id="thAufgabe" style="background-color: beige;">Aufgabe</th>
+                        <th id="thDate" style="background-color: beige;">Erstellung</th>
+                        <th id="thDate" style="background-color: beige;">Fällig</th>
+                        <th id="thEnd" style="background-color: beige;">Erl.</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td id="thAufgabe">1</td>
-                        <td id="thDate">2</td>
-                        <td id="thDate">3</td>
-                        <td id="thEnd"><button>OK</button></td>
+                        <td id="thAufgabe"></td>
+                        <td id="thDate"></td>
+                        <td id="thDate"></td>
+                        <td id="thEnd"></td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
     <script src="main.js"></script>
+
 
 </body>
 
