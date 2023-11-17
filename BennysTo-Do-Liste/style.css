@@ -2,30 +2,80 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 /* Bereich für die headBox */
 
+body {
+    background-color: black;
+}
+
 .container {
     display: flex;
     flex-direction: column;
+    background-color: black;
+    justify-content: center;
+    vertical-align: top;
+    width: 98%;
+    height: 100%;
+    padding: 0 1% 0 1%;
+}
 
+.headBoxSmall3 {
+    display: flex;
     justify-content: center;
     vertical-align: middle;
-    width: 98%;
-    padding: 0 1% 0 1%;
+    margin: 2% 20% 0 20%;
+    padding: 3% 0 3% 0;
+    height: auto;
+    width: 60%;
+    border: solid 1px black;
+    transform: perspective(2px) rotateX(0.5deg);
+    background-color: white;
+    box-shadow: 0px 0px 50px orange;
+}
+
+.headBoxSmall2 {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    margin: 1% 32% 0 32%;
+    padding: 2% 0 2% 0;
+    height: auto;
+    width: 36%;
+    border: solid 1px black;
+    transform: perspective(2px) rotateX(0.8deg);
+    background-color: white;
+    box-shadow: 0px 0px 50px orange;
+}
+
+.headBoxSmall1 {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    margin: 1% 39% 0 39%;
+    padding: 1% 0 1% 0;
+    height: auto;
+    width: 22%;
+    border: solid 1px black;
+    transform: perspective(0.5px) rotateX(0.8deg);
+    background-color: white;
+    box-shadow: 0px 0px 50px orange;
 }
 
 .headBox {
     display: flex;
     justify-content: center;
     vertical-align: middle;
-    margin: 5% 10% 0 10%;
+    margin: 3% 10.5% 0 10.5%;
     padding: 3% 0 3% 0;
     height: auto;
-    width: 80%;
+    width: 79%;
     border: solid 1px black;
+    transform: perspective(20px) rotateX(0.5deg);
+    background-color: white;
+    box-shadow: 0px 0px 50px orange;
 }
 
 /* Bereich für den coreBox */
@@ -34,22 +84,25 @@
     display: flex;
     justify-content: center;
     vertical-align: middle;
-    margin: 5% 7.5% 0 7.5%;
+    margin: 3% 6% 0 6%;
     padding: 3% 0 3% 0;
     height: auto;
-    width: 85%;
+    width: 88%;
     border: solid 1px black;
+    transform: perspective(25px) rotateX(0.4deg);
+    background-color: white;
+    box-shadow: 0px 0px 80px orange;
 }
 
 #coreGround {
-    width: 95%;
+    width: 100%;
     height: auto;
 }
 
 #coreHeadline {
     display: flex;
     flex-direction: row;
-    margin-left: 5%;
+    margin: 0 0 1% 2%;
 }
 
 #coreInputMask {
@@ -57,11 +110,27 @@
     flex-direction: row;
 }
 
-#coreInput {
+#coreInputTask {
     display: flex;
     flex-direction: column;
-    margin-left: 5%;
-    width: 79%;
+    margin: 0 1% 0 2%;
+    width: 70%;
+}
+
+#coreInputBegin {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 1%;
+    width: 10%;
+    text-align: center;
+}
+
+#coreInputEnd {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 0;
+    width: 10%;
+    text-align: center;
 }
 
 #coreSubmit {
@@ -69,8 +138,8 @@
     flex-direction: column;
     align-items: center;
     font-size: 70%;
-    margin-left: 1%;
-    width: 10%;
+    margin: 0 2% 0 1%;
+    width: 5%;
 }
 
 /* Bereich für den listBox */
@@ -80,11 +149,13 @@
     justify-content: center;
     vertical-align: middle;
     flex-direction: column;
-    margin: 5% 5% 0 5%;
+    margin: 3% 4% 0 4%;
     padding: 3% 0 3% 0;
     height: auto;
-    width: 90%;
+    width: 92%;
     border: solid 1px black;
+    background-color: white;
+    box-shadow: 0px 0px 100px orange;
 }
 
 #listTable {
@@ -93,7 +164,7 @@
     justify-content: space-between;
     padding: 0 20px 0 20px;
     width: auto;
-    font-size: 60%;
+    font-size: 100%;
 }
 
 #listHeadline {

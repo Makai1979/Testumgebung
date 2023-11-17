@@ -10,7 +10,9 @@
 
 <body>
     <div class="container">
-
+        <div class="headBoxSmall1"></div>
+        <div class="headBoxSmall2"></div>
+        <div class="headBoxSmall3"></div>
         <div class="headBox">
             <div id="headGround">
                 <h2>Benny´s To-Do-Liste</h2>
@@ -20,10 +22,12 @@
         <div class="coreBox">
             <div id="coreGround">
                 <h5 id="coreHeadline">Trage die Aufgabe ein:</h5>
-                <div id="coreInputMask">
-                    <input id="coreInput" type="text" placeholder="Aufgabe eingeben...">
-                    <button id="coreSubmit">Send</button>
-                </div>
+                <form id="coreInputMask">
+                    <input id="coreInputTask" type="text" placeholder="Aufgabe eingeben..." required>
+                    <input id="coreInputBegin" type="date" placeholder="Aufgabe eingeben...">
+                    <input id="coreInputEnd" type="date" placeholder="Aufgabe eingeben...">
+                    <button id="coreInput" type="submit">Send</button>
+                </form>
             </div>
 
         </div>
@@ -44,7 +48,7 @@
                         <td id="thAufgabe">1</td>
                         <td id="thDate">2</td>
                         <td id="thDate">3</td>
-                        <td id="thEnd">4</td>
+                        <td id="thEnd"><button>OK</button></td>
                     </tr>
                 </tbody>
             </table>
