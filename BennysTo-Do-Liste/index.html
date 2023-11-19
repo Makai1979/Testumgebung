@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
-    <script rel="script" src="jquery.js"></script>
-    
+    <script src="jquery.js"></script>
+    <script src="main.js"></script>
     <title>To-Do-Liste</title>
 </head>
 
@@ -17,25 +17,35 @@
         <div class="headBoxSmall3"></div>
         <div class="headBox">
             <div id="headGround">
-                <h2>Benny´s To-Do-Liste</h2>
+                <h1>Benny´s To-Do-Liste</h1>
             </div>
         </div>
 
         <div class="coreBox">
             <div id="coreGround">
-                <h5 id="coreHeadline">Trage die Aufgabe ein:</h5>
+                <h4 id="coreHeadline">Eingabemaske</h4>
                 <form id="coreInputMask">
-                    <input id="coreInputTask" type="text" placeholder="Aufgabe eingeben..." required>
-                    <input id="coreInputBegin" type="date" placeholder="Aufgabe eingeben..." required>
-                    <input id="coreInputEnd" type="date" placeholder="Aufgabe eingeben..." required>
-                    <button type="submit" onclick="createTask()">Anlegen</button>
-                    <button type="submit" onclick="saveTask()">Speichern</button>
+                    <div id="coreInputTask">
+                        <label class="form-label">Aufgabe:</label>
+                        <div id="inputTask"><input style="width: 100%;" type="text" placeholder="Aufgabe eingeben..." required></div>
+                    </div>
+                    <div id="coreInputBegin">
+                        <label class="form-label">Start:</label>
+                        <div id="inputBegin"><input style="width: 90%; margin: 15% 0 0 0;" type="date" placeholder="Datum Start" required></div>
+                    </div>
+                    <div id="coreInputEnd">
+                        <label class="form-label">Ende:</label>
+                        <div id="inputEnd"><input style="width: 90%; margin: 15% 0 0 0;" type="date" placeholder="Datum Ende" required></div>
+                    </div>
+                    <button id="coreSubmit" type="create" onclick="createTask()">Anlegen</button>
+
+                    <button id="coreSubmit" type="save">Speichern</button>
+
                 </form>
             </div>
         </div>
 
         <div class="listBox">
-            
             <table id="listTable">
                 <h3 id="listHeadline">Aufgabenliste</h3>
                 <thead>
@@ -57,18 +67,8 @@
                     </tr>
                 </tbody>
             </table>
-            
         </div>
-        
-        
-
-        
-        
     </div>
-    <script src="main.js"></script>
-    
-
-
 </body>
 
 </html>

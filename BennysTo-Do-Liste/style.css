@@ -104,6 +104,7 @@ body {
     display: flex;
     flex-direction: row;
     margin: 0 0 1% 2%;
+    justify-content: center;
 }
 
 #coreInputMask {
@@ -114,33 +115,77 @@ body {
 #coreInputTask {
     display: flex;
     flex-direction: column;
-    margin: 0 1% 0 2%;
-    width: 70%;
+    margin: 0 0.5% 0 2%;
+    padding: 1%;
+    width: 69%;
+    box-shadow: 3px 3px 20px gray;
+    border-radius: 10px;
+}
+
+#inputTask {
+    width: 100%;
+    box-shadow: 3px 3px 20px gray;
 }
 
 #coreInputBegin {
     display: flex;
     flex-direction: column;
-    margin: 0 0 0 1%;
-    width: 10%;
+    margin: 0 0.2% 0 1%;
+    width: 6%;
     text-align: center;
+    box-shadow: 3px 3px 5px gray;
+    border: none;
+    border-radius: 10px;
+}
+
+#inputBegin {
+    width: 100%;
+    height: 10%;
+    box-shadow: 3px 3px 20px gray;
+    border-radius: 10px;
 }
 
 #coreInputEnd {
     display: flex;
     flex-direction: column;
-    margin: 0 0 0 0;
-    width: 10%;
+    margin: 0 0.8% 0 0;
+    width: 6%;
     text-align: center;
+    box-shadow: 3px 3px 5px gray;
+    border: none;
+    border-radius: 10px;
+}
+
+#inputEnd {
+    width: 100%;
+    height: 10%;
+    box-shadow: 3px 3px 20px gray;
+    border-radius: 10px;
 }
 
 #coreSubmit {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     font-size: 70%;
-    margin: 0 2% 0 1%;
+    margin: 0 0.5% 0 0.1%;
     width: 5%;
+    box-shadow: 3px 3px 2px gray;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#coreSubmit:hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 70%;
+    margin: 0 0.5% 0 0.5%;
+    width: 5%;
+    box-shadow: 3px 3px 2px gray;
+    border: 1px solid black;
 }
 
 /* Bereich für den listBox */
