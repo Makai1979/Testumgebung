@@ -11,9 +11,13 @@ $(document).ready(() => {
 function createTask() {
     let task = $('#iTask').val();
     let begin = $('#iBegin').val();
+    const beginDatum = new Date(begin).toLocaleDateString("de-DE")
+    console.log(beginDatum)
     let end = $('#iEnd').val();
+    const endDatum = new Date(end).toLocaleDateString("de-DE")
+    console.log(endDatum)
 
-    let newTask = new Task(task, begin, end);
+    let newTask = new Task(task, beginDatum, endDatum);
     tasks.push(newTask);
 
     localStorage.setItem('tasks', JSON.stringify(tasks));
@@ -22,27 +26,48 @@ function createTask() {
     pruefeDatum();
 }
 
+function resetEntry() {
+    $('#iBegin').val("");
+    $('#iEnd').val("");
+    $('#iTask').val("");
+}
+
 function updateTask(index) {
     const task = tasks[index];
 
+    let begin = $('#iBegin').val();
+    const beginDatum = new Date(begin).toLocaleDateString("de-DE")
+    console.log(beginDatum)
+    let end = $('#iEnd').val();
+    const endDatum = new Date(end).toLocaleDateString("de-DE")
+    console.log(endDatum)
+
     task.task = $('#iTask').val();
-    task.begin = $('#iBegin').val();
-    task.end = $('#iEnd').val();
+    task.begin = beginDatum;
+    task.end = endDatum;
 
     localStorage.setItem('tasks', JSON.stringify(tasks));
 
     renderTasksTable();
     pruefeDatum();
+    resetEntry();
 }
 
 function editTask(index) {
     const task = tasks[index];
-
     $('#iTask').val(task.task);
-    $('#iBegin').val(task.begin);
-    $('#iEnd').val(task.end);
 
-    $('#coreInputMask').off('submit').on('submit', function(event) {
+    let newBegin = task.begin.split(".")
+    let isoBegin = `${newBegin[2]}-0${newBegin[1]}-${newBegin[0]}`
+    console.log(isoBegin)
+    let newEnd = task.end.split(".")
+    let isoEnd = `${newEnd[2]}-0${newEnd[1]}-${newEnd[0]}`
+    console.log(isoEnd)
+
+    $('#iBegin').val(isoBegin);
+    $('#iEnd').val(isoEnd);
+    $('#coreInputMask').off('submit');
+    $('#coreInputMask').on('submit', function(event) {
         event.preventDefault();
         updateTask(index);
     });
@@ -51,7 +76,6 @@ function editTask(index) {
 
     pruefeDatum();
 }
-
 function renderTasksTable() {
     $("table tr:gt(0)").remove();
 
@@ -76,18 +100,19 @@ class Task {
 
 function deleteTask(index) {
     tasks.splice(index, 1);
+
     localStorage.setItem('tasks', JSON.stringify(tasks));
+
     renderTasksTable();
     pruefeDatum();
 }
-
 
 function pruefeDatum() {
     const eintraege = $('td');
 
     eintraege.each(function() {
         const text = $(this).text();
-        const datumPattern = /(\d{4})-(\d{2})-(\d{2})/;
+        const datumPattern = /(\d{2})-(\d{2})-(\d{4})/;
 
         const match = text.match(datumPattern);
 

@@ -9,7 +9,22 @@
 
 body {
     background-color: black;
+    animation: glimmerBG 5s infinite alternate;
+    /* Farbanimation  */
 }
+
+@keyframes glimmerBG {
+    0% {
+        background-color: #000000;
+        /* Startfarbe */
+    }
+
+    100% {
+        background-color: #4e1e11;
+        /* Endfarbe */
+    }
+}
+
 
 .container {
     display: flex;
@@ -20,6 +35,21 @@ body {
     width: 98%;
     height: 100%;
     padding: 0 1% 0 1%;
+    animation: glimmerBG 5s infinite alternate;
+    /* Farbanimation  */
+}
+
+@keyframes glimmerBG {
+    0% {
+        background-color: #000000;
+        /* Startfarbe */
+    }
+
+    100% {
+        background-color: #4e1e11;
+        /* Endfarbe */
+    }
+
 }
 
 .headBoxSmall3 {
@@ -34,6 +64,57 @@ body {
     transform: perspective(2px) rotateX(0.5deg);
     background-color: white;
     box-shadow: 0px 0px 50px orange;
+    animation: glimmerhBS 9s infinite alternate;
+    /* Farbanimation  */
+}
+
+@keyframes glimmerhBS {
+    0% {
+        background-color: white;
+        border-radius: 0;
+        /* Startfarbe */
+    }
+
+    100% {
+        background-color: #f9e4c2;
+        border-radius: 20px;
+        /* Endfarbe */
+    }
+}
+
+.headBoxSmall3:hover {
+    background-color: #FCA311;
+    /* Startfarbe */
+    animation: glimmer3 1s infinite alternate, resize3 0.9s infinite alternate;
+    /* Farbanimation und Größenanimation */
+}
+
+@keyframes glimmer3 {
+    0% {
+        background-color: #FCA311;
+        /* Startfarbe */
+    }
+
+    100% {
+        background-color: #FF5733;
+        /* Endfarbe */
+    }
+}
+
+@keyframes resize3 {
+
+    0%,
+    100% {
+        transform: scale(1) perspective(2px) rotateX(0.5deg);
+        /* Normale Größe */
+        box-shadow: 0px 0px 50px orange;
+    }
+
+    50% {
+        transform: scale(1.1) perspective(2.05px) rotateX(0.6deg);
+        /* 10% größer als normal */
+        box-shadow: 0px 0px 100px rgb(255, 230, 182);
+    }
 }
 
 .headBoxSmall2 {
@@ -48,7 +129,44 @@ body {
     transform: perspective(2px) rotateX(0.8deg);
     background-color: white;
     box-shadow: 0px 0px 50px orange;
+    animation: glimmerhBS 9s infinite alternate;
 }
+
+.headBoxSmall2:hover {
+    background-color: #FCA311;
+    /* Startfarbe */
+    animation: glimmer2 1s infinite alternate, resize2 0.7s infinite alternate;
+    /* Farbanimation und Größenanimation */
+}
+
+@keyframes glimmer2 {
+    0% {
+        background-color: #FCA311;
+        /* Startfarbe */
+    }
+
+    100% {
+        background-color: #FF5733;
+        /* Endfarbe */
+    }
+}
+
+@keyframes resize2 {
+
+    0%,
+    100% {
+        transform: scale(1) perspective(2px) rotateX(0.8deg);
+        /* Normale Größe */
+        box-shadow: 0px 0px 50px orange;
+    }
+
+    50% {
+        transform: scale(1.1) perspective(2.2px) rotateX(1.0deg);
+        /* 10% größer als normal */
+        box-shadow: 0px 0px 100px rgb(255, 230, 182);
+    }
+}
+
 
 .headBoxSmall1 {
     display: flex;
@@ -62,7 +180,44 @@ body {
     transform: perspective(0.5px) rotateX(0.8deg);
     background-color: white;
     box-shadow: 0px 0px 50px orange;
+    animation: glimmerhBS 9s infinite alternate;
 }
+
+.headBoxSmall1:hover {
+    background-color: #FCA311;
+    /* Startfarbe */
+    animation: glimmer1 1s infinite alternate, resize1 0.6s infinite alternate;
+    /* Farbanimation und Größenanimation */
+}
+
+@keyframes glimmer1 {
+    0% {
+        background-color: #FCA311;
+        /* Startfarbe */
+    }
+
+    100% {
+        background-color: #FF5733;
+        /* Endfarbe */
+    }
+}
+
+@keyframes resize1 {
+
+    0%,
+    100% {
+        transform: scale(1) perspective(0.5px) rotateX(0.8deg);
+        /* Normale Größe */
+        box-shadow: 0px 0px 50px orange;
+    }
+
+    50% {
+        transform: scale(1.1) perspective(0.7px) rotateX(0.9deg);
+        /* 10% größer als normal */
+        box-shadow: 0px 0px 100px rgb(255, 230, 182);
+    }
+}
+
 
 .headBox {
     display: flex;
@@ -76,6 +231,22 @@ body {
     transform: perspective(20px) rotateX(0.5deg);
     background-color: white;
     box-shadow: 0px 0px 50px orange;
+    animation: glimmerHB 10s infinite alternate;
+    /* Farbanimation  */
+}
+
+@keyframes glimmerHB {
+    0% {
+        background-color: white;
+        border-radius: 0;
+        /* Startfarbe */
+    }
+
+    100% {
+        background-color: #f9e4c2;
+        border-radius: 50px;
+        /* Endfarbe */
+    }
 }
 
 
@@ -93,6 +264,22 @@ body {
     transform: perspective(25px) rotateX(0.4deg);
     background-color: white;
     box-shadow: 0px 0px 80px orange;
+    animation: glimmerCB 8s infinite alternate;
+    /* Farbanimation  */
+}
+
+@keyframes glimmerCB {
+    0% {
+        background-color: white;
+        border-radius: 0;
+        /* Startfarbe */
+    }
+
+    100% {
+        background-color: #f9e4c2;
+        border-radius: 50px;
+        /* Endfarbe */
+    }
 }
 
 #coreGround {
@@ -226,6 +413,22 @@ body {
     border: solid 1px black;
     background-color: white;
     box-shadow: 0px 0px 100px orange;
+    animation: glimmerLB 9s infinite alternate;
+    /* Farbanimation  */
+}
+
+@keyframes glimmerLB {
+    0% {
+        background-color: white;
+        border-radius: 0;
+        /* Startfarbe */
+    }
+
+    100% {
+        background-color: #f9e4c2;
+        border-radius: 50px;
+        /* Endfarbe */
+    }
 }
 
 #listTable {
@@ -273,7 +476,7 @@ tr {
     border: solid 1px black;
 }
 
-tbody{
+tbody {
     display: flex;
     flex-direction: column;
 }
@@ -284,4 +487,85 @@ td {
     text-align: center;
     border: solid 1px black;
     width: 25%;
+}
+
+/* Bereich für den Rotater */
+
+.rotater {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 100px;
+    height: 300px;
+    width: 100%;
+}
+
+.cube {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotateCubeR 4s infinite linear, glimmerR 2s infinite alternate;
+    box-shadow: 20px 20px 100px #ffffff;
+    /* Rotationsanimation und Farbwechsel */
+}
+
+.side {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: rgba(252, 163, 17, 0.8);
+    box-shadow: 20px 20px 100px #ffffff;
+    /* Startfarbe */
+}
+
+.front {
+    transform: rotateY(0deg) translateZ(25px);
+    box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.8);
+}
+
+.back {
+    transform: rotateY(90deg) translateZ(25px);
+    box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.8);
+}
+
+.right {
+    transform: rotateY(180deg) translateZ(25px);
+    box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.8);
+}
+
+.left {
+    transform: rotateY(-90deg) translateZ(25px);
+    box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.8);
+}
+
+.top {
+    transform: rotateX(90deg) translateZ(25px);
+    box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.8);
+}
+
+.bottom {
+    transform: rotateX(-90deg) translateZ(25px);
+    box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.8);
+}
+
+@keyframes rotateCubeR {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes glimmerR {
+    0% {
+        background-color: rgba(252, 163, 17, 0.8);
+        /* Startfarbe */
+    }
+
+    100% {
+        background-color: rgba(255, 87, 51, 0.8);
+        /* Endfarbe */
+    }
 }

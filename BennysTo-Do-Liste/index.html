@@ -27,15 +27,18 @@
                 <form id="coreInputMask">
                     <div id="coreInputTask">
                         <label class="form-label">Aufgabe:</label>
-                        <div id="inputTask"><input id="iTask" style="width: 100%;" type="text" placeholder="Aufgabe eingeben..." required></div>
+                        <div id="inputTask"><input id="iTask" style="width: 100%;" type="text"
+                                placeholder="Aufgabe eingeben..." required></div>
                     </div>
                     <div id="coreInputBegin">
                         <label class="form-label">Start:</label>
-                        <div id="inputBegin"><input id="iBegin" style="width: 90%; margin: 0.4em 0 0 0;" type="date" placeholder="Datum Start" required></div>
+                        <div id="inputBegin"><input id="iBegin" style="width: 90%; margin: 0.4em 0 0 0;" type="date"
+                                placeholder="Datum Start" required></div>
                     </div>
                     <div id="coreInputEnd">
                         <label class="form-label">Ende:</label>
-                        <div id="inputEnd"><input id="iEnd" style="width: 90%; margin: 0.4em 0 0 0;" type="date" placeholder="Datum Ende" required></div>
+                        <div id="inputEnd"><input id="iEnd" style="width: 90%; margin: 0.4em 0 0 0;" type="date"
+                                placeholder="Datum Ende" required></div>
                     </div>
                     <button id="coreSubmit" type="create" onclick="createTask()">Anlegen</button>
 
@@ -51,22 +54,30 @@
                 <thead>
                     <tr>
                         <th id="thAufgabe" style="background-color: beige;">Aufgabe</th>
-                        <th type="date" id="thDate" style="background-color: beige;">Erstellung</th>
-                        <th type="date" id="thDate" style="background-color: beige;">Fällig</th>
+                        <th id="thDate" style="background-color: beige;">Erstellung</th>
+                        <th id="thDate" style="background-color: beige;">Fällig</th>
                         <th id="thEnd" style="background-color: beige;">Erl.</th>
                         <th id="thEnd" style="background-color: beige;">Edit</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td id="thAufgabe"></td>
-                        <td id="thDate"></td>
-                        <td id="thDate"></td>
-                        <td id="thEnd"></td>
-                        <td id="thEnd"></td>
-                    </tr>
+
                 </tbody>
             </table>
+        </div>
+        <div class="rotater">
+
+            <div class="cube">
+                <div class="side front"></div>
+                <div class="side back"></div>
+                <div class="side right"></div>
+                <div class="side left"></div>
+                <div class="side top"></div>
+                <div class="side bottom"></div>
+            </div>
+            
+
+
         </div>
     </div>
 </body>
