@@ -9,9 +9,9 @@ $(document).ready(() => {
 });
 
 function createTask() {
-    let task = $('#coreInputTask').val();
-    let begin = $('#coreInputBegin').val();
-    let end = $('#coreInputEnd').val();
+    let task = $('#iTask').val();
+    let begin = $('#iBegin').val();
+    let end = $('#iEnd').val();
 
     let newTask = new Task(task, begin, end);
     tasks.push(newTask);
@@ -25,9 +25,9 @@ function createTask() {
 function updateTask(index) {
     const task = tasks[index];
 
-    task.task = $('#coreInputTask').val();
-    task.begin = $('#coreInputBegin').val();
-    task.end = $('#coreInputEnd').val();
+    task.task = $('#iTask').val();
+    task.begin = $('#iBegin').val();
+    task.end = $('#iEnd').val();
 
     localStorage.setItem('tasks', JSON.stringify(tasks));
 
@@ -38,9 +38,9 @@ function updateTask(index) {
 function editTask(index) {
     const task = tasks[index];
 
-    $('#coreInputTask').val(task.task);
-    $('#coreInputBegin').val(task.begin);
-    $('#coreInputEnd').val(task.end);
+    $('#iTask').val(task.task);
+    $('#iBegin').val(task.begin);
+    $('#iEnd').val(task.end);
 
     $('#coreInputMask').off('submit').on('submit', function(event) {
         event.preventDefault();
@@ -58,11 +58,11 @@ function renderTasksTable() {
     for (let i = 0; i < tasks.length; i++) {
         $("tbody").append(`<tr id="row${i}"></tr>`);
         let row = $(`#row${i}`);
-        $(row).append(`<td>${tasks[i].task}</td>`);
-        $(row).append(`<td>${tasks[i].begin}</td>`);
-        $(row).append(`<td>${tasks[i].end}</td>`);
-        $(row).append(`<td><button onclick="deleteTask(${i})">Löschen</button></td>`);
-        $(row).append(`<td><button onclick="editTask(${i})">Bearbeiten</button></td>`);
+        $(row).append(`<td id="thAufgabe">${tasks[i].task}</td>`);
+        $(row).append(`<td id="thDate">${tasks[i].begin}</td>`);
+        $(row).append(`<td id="thDate">${tasks[i].end}</td>`);
+        $(row).append(`<td id="thEnd"><button onclick="deleteTask(${i})">Löschen</button></td>`);
+        $(row).append(`<td id="thEnd"><button onclick="editTask(${i})">Edit</button></td>`);
     }
 }
 
