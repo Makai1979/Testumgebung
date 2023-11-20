@@ -61,8 +61,8 @@ function renderTasksTable() {
         $(row).append(`<td id="thAufgabe">${tasks[i].task}</td>`);
         $(row).append(`<td id="thDate">${tasks[i].begin}</td>`);
         $(row).append(`<td id="thDate">${tasks[i].end}</td>`);
-        $(row).append(`<td id="thEnd"><button onclick="deleteTask(${i})">Löschen</button></td>`);
-        $(row).append(`<td id="thEnd"><button onclick="editTask(${i})">Edit</button></td>`);
+        $(row).append(`<td class="thEnd"><button id="BTN" onclick="deleteTask(${i})">Löschen</button></td>`);
+        $(row).append(`<td class="thEnd"><button id="BTN" onclick="editTask(${i})">Edit</button></td>`);
     }
 }
 

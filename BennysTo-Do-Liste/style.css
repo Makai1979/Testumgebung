@@ -343,7 +343,7 @@ body {
 }
 
 #iBegin {
-    font-size: 0.8em;
+    font-size: 0.65em;
 }
 
 #coreInputBegin:hover {
@@ -371,13 +371,31 @@ body {
 }
 
 #iEnd {
-    font-size: 0.8em;
+    font-size: 0.65em;
 }
 
 #coreInputEnd:hover {
     box-shadow: 3px 3px 15px black;
     border: 1px solid black;
     border-width: inherit;
+}
+
+#coreSubmitDiv {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 0 0;
+    padding: 0 10px 0 0;
+}
+
+@media (max-width: 780px) {
+    
+    #coreSubmitDiv {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 0;
+        padding: 0 10px 0 0;
+    }
+
 }
 
 #coreSubmit {
@@ -391,6 +409,7 @@ body {
     box-shadow: 3px 3px 2px gray;
     border: 1px solid black;
     border-radius: 10px;
+    
 }
 
 #coreSubmit:hover {
@@ -453,6 +472,7 @@ body {
     flex-direction: column;
     border: solid 1px black;
     width: 65%;
+    font-size: 1.8vw;
 }
 
 #thDate {
@@ -460,20 +480,28 @@ body {
     flex-direction: column;
     border: solid 1px black;
     width: 8em;
+    font-size: 1.8vw;
 }
 
-#thEnd {
+.thEnd {
     display: flex;
     flex-direction: column;
     border: solid 1px black;
     width: 6em;
+    font-size: 1.8vw;
 }
 
+#BTN {
+    font-size: 1.8vw;
+}
 
 tr {
     display: flex;
+    justify-content: center;
     flex-direction: row;
     border: solid 1px black;
+    text-align: center;
+    vertical-align: middle;
 }
 
 tbody {
@@ -484,9 +512,10 @@ tbody {
 td {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    justify-content: center;
     border: solid 1px black;
     width: 25%;
+    
 }
 
 /* Bereich für den Rotater */

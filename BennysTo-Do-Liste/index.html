@@ -40,10 +40,11 @@
                         <div id="inputEnd"><input id="iEnd" style="width: 90%; margin: 0.4em 0 0 0;" type="date"
                                 placeholder="Datum Ende" required></div>
                     </div>
-                    <button id="coreSubmit" type="create" onclick="createTask()">Anlegen</button>
+                    <div id="coreSubmitDiv">
+                        <button id="coreSubmit" type="create" onclick="createTask()">Anlegen</button>
 
-                    <button id="coreSubmit" type="save">Speichern</button>
-
+                        <button id="coreSubmit" type="save">Speichern</button>
+                    </div>
                 </form>
             </div>
         </div>
@@ -56,8 +57,8 @@
                         <th id="thAufgabe" style="background-color: beige;">Aufgabe</th>
                         <th id="thDate" style="background-color: beige;">Erstellung</th>
                         <th id="thDate" style="background-color: beige;">Fällig</th>
-                        <th id="thEnd" style="background-color: beige;">Erl.</th>
-                        <th id="thEnd" style="background-color: beige;">Edit</th>
+                        <th class="thEnd" style="background-color: beige;">Erl.</th>
+                        <th class="thEnd" style="background-color: beige;">Edit</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -75,7 +76,7 @@
                 <div class="side top"></div>
                 <div class="side bottom"></div>
             </div>
-            
+
 
 
         </div>
