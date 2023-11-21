@@ -4,10 +4,8 @@
 			"path": "."
 		},
 		{
-			"path": "."
+			"path": "O:/p_pool/Benny/Projektarbeit/Programmieren-Starten"
 		}
 	],
-	"settings": {
-		"liveServer.settings.port": 5501
-	}
+	"settings": {}
 }
