@@ -1,37 +1,38 @@
-
 let points = 0;
+let userAnswer = '';
 
-function getAnswer () {
-    let userAnswer = documet.getElementById('text').value;
+function send() {
+  userAnswer = document.getElementById("answer");
+  console.log(userAnswer);
+  
 }
 
-australia()
 
-function australia(userAnswer) {
-  // what is the capital of australia?
-  // 100 pts
-  
-  document.getElementById('#text').innerHTML = 'what is the capital of australia?';
-  
-  
 
-  const isCorrect = userAnswer.toUpperCase() === 'CANBERRA';
 
-  if (isCorrect) {
-    points += 100;
-  } else {
-    alert("That´s nicht korrekt!")
+/*
+
+  function australia() {
+    // what is the capital of australia?
+    // 100 pts
+    
+    
+    const isCorrect = userAnswer.toUpperCase() === 'CANBERRA';
+  
+    if (isCorrect) {
+      points += 100;
+    } else {
+      alert("That´s nicht korrekt!")
+    }
+    return isCorrect;
+  
   }
-  return isCorrect;
 
-}
 
-canada();
 
 function canada(userAnswer) {
   // what is the capital of canada?
   // 100 pts
-
   document.getElementById('#text').innerHTML = 'what is the capital of australia?';
 
   const isCorrect = userAnswer.toUpperCase() === 'OTTAWA';
@@ -87,3 +88,4 @@ function getScore() {
   // returns the current user's quiz score score
 
 }
+*/
