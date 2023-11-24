@@ -123,6 +123,7 @@ function deleteTask(index) {
 
     renderTasksTable();
     pruefeDatum();
+    console.log('Löschung erfolgreich!')
 }
 
 function pruefeDatum() {
