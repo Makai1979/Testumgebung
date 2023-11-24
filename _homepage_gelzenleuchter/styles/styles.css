@@ -1,0 +1,1776 @@
+/* Grundgeruest */
+
+body {
+    background-color: #ebebf7;
+}
+
+/* Topper */
+
+.Topper {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+#text_topper {
+    margin-top: 5px;
+    text-shadow: 2px 2px 5px white;
+}
+
+#balken_links {
+    margin-top: 13px;
+    padding: 0;
+    height: 20px;
+    background-color: #05b2aa;
+}
+
+#balken_rechts {
+    margin-top: 13px;
+    padding: 0;
+    height: 20px;
+    background-color: #05b2aa;
+}
+
+/* Navigation Oben */
+
+#suchfeld {
+    margin-inline-end: auto;
+}
+
+.navbar {
+    background-color: white;
+    min-height: 80px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-size: x-large;
+    font-family: sans-serif;
+    box-shadow: 0px 0px 15px;
+}
+
+.nav_feld {
+    width: 100%;
+}
+
+#nav_leiste {
+    width: 125%;
+
+}
+
+.nav-link {
+    padding-left: 1.8%;
+    margin-top: 4px;
+    font-weight: 500;
+    text-transform: lowercase;
+    font-size: medium;
+}
+
+.nav-link.active {
+    padding-left: 5%;
+    margin-top: 3px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: lowercase;
+    text-decoration: overline underline;
+    font-size: large;
+}
+
+#nav_elemente {
+    padding: 0;
+    margin-top: 1.2%;
+}
+
+#suchfeld {
+    width: 99%;
+    margin-top: 0%;
+}
+
+#suche_button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: medium;
+    height: 70%;
+    margin-top: 1.6%;
+}
+
+#suche_form {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: medium;
+    height: 70%;
+    margin-top: 1.6%;
+}
+
+/* Navigation Gallery */
+
+#nav_gallery {
+    padding: 0;
+    background-color: transparent;
+    height: 0px;
+    width: fit-content;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-size: x-large;
+    font-family: sans-serif;
+    box-shadow: 0px 0px 0px;
+}
+
+#nav_gallery_leiste {
+    z-index: 1;
+}
+
+#nav_col_gallery {
+    margin: 0;
+    padding: 0;
+    padding-right: 20px;
+    width: fit-content;
+}
+
+#nav_grid_gallery {
+    margin-top: 0px;
+    right: auto;
+    left: 100%;
+    position: absolute;
+}
+
+.nav_gallery_gel {
+    width: 300px;
+    background: rgb(71, 77, 164);
+    color: white;
+    text-align: left;
+    text-align-last: left;
+    border-radius: 5px;
+    box-shadow: grey 3px 3px 5px;
+    font-weight: 500;
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border: 0px;
+    margin-bottom: 2px;
+}
+
+
+.nav_gallery_gel:hover {
+    transition: 0.3s ease-in-out;
+    background: rgb(166, 255, 255);
+    color: rgb(0, 186, 174);
+}
+
+.nav_gallery_gel.show {
+    background: linear-gradient(90deg, rgb(163, 233, 224), white 30% 70%, rgb(163, 233, 224));
+    font-weight: 600;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.nav_gallery_icon {
+    height: 100px;
+    padding: 0;
+    margin: 0;
+    color: white;
+    text-shadow: black 2px 2px 5px;
+    font-style: italic;
+    font-size: 0.5cq;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+#gallery {
+    z-index: 0;
+    width: 100%;
+    position: static;
+    margin-top: -8px;
+}
+
+#nav_brand_set {
+    height: 200px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background: linear-gradient(90deg, transparent, white 30% 70%, transparent);
+    font-size: small;
+    justify-content: flex-start;
+}
+
+#brand {
+    position: sticky;
+    width: 50%;
+    margin: 2%;
+    padding-left: 1vw;
+}
+
+#brand_gel {
+    position: sticky;
+    width: 50%;
+    margin: 2%;
+    padding-left: 1vw;
+}
+
+
+.brand_fond {
+    padding-top: 5px;
+    font-style: italic;
+    text-decoration: underline;
+    color: rgb(71, 77, 164);
+}
+
+#brand_icon {
+    width: 60%;
+    height: auto;
+    font-size: small;
+}
+
+#brand_icon_gel {
+    width: auto;
+    height: 52%;
+    font-size: small;
+}
+
+
+/* Navigation linke Seite */
+
+.dropdown-menu li {
+    position: relative;
+}
+
+.dropdown-menu .dropdown-submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0px;
+
+}
+
+.dropdown-menu {
+    min-width: 2rem;
+    box-shadow: grey 1px 1px 5px;
+    background-color: #d2fffd;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.dropdown-menu .dropdown-submenu-left {
+    right: auto;
+    left: 100%;
+}
+
+.dropdown-menu>li:hover>.dropdown-submenu {
+    display: block;
+}
+
+.dropdown-item {
+    font-style: italic;
+    font-weight: 500;
+}
+
+.dropdown-item:hover {
+    transition: 0.3s ease-in-out;
+    background: rgb(166, 255, 255);
+    color: rgb(0, 186, 174);
+}
+
+.dropdown-balken {
+    margin-left: 15px;
+    padding: 0;
+    width: 1px;
+    height: 100%;
+    background-color: black;
+}
+
+.dropdown-strich {
+    margin-left: 15px;
+    padding: 0;
+    height: 1px;
+    width: 275px;
+    background: linear-gradient(90deg, black 10% 80%, transparent);
+    box-shadow: grey 1px 1px 10px;
+}
+
+.dropdown-item_x {
+    margin-left: 0px;
+    padding: 5px;
+    min-width: 2rem;
+    color: black;
+    background: linear-gradient(90deg, transparent 0, 5%, rgb(163, 233, 224) 10% 80%, transparent);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: medium;
+    display: block;
+    position: relative;
+}
+
+.dropdown-item_x:hover {
+    transition: 0.3s ease-in;
+    background: linear-gradient(90deg, transparent 0, 5%, rgb(109, 223, 208) 10% 80%, transparent);
+    color: rgb(255, 255, 255);
+}
+
+.dropdown-item_y {
+    margin-left: 0px;
+    padding: 5px;
+    min-width: 2rem;
+    color: rgb(143, 143, 143);
+    background: transparent;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: medium;
+    display: block;
+    position: relative;
+}
+
+.dropdown-item_y:hover {
+    transition: 0.3s ease-in;
+    background: linear-gradient(90deg, transparent 0, 5%, rgb(109, 223, 208) 10% 80%, transparent);
+    color: black;
+}
+
+.pfeil_1 {
+    margin-left: -12px;
+    border-top: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+    border-left: 10px solid rgb(71, 77, 164);
+}
+
+.pfeil_2 {
+    margin-left: -14px;
+    border-top: 28px solid transparent;
+    border-right: 28px solid transparent;
+    border-bottom: 28px solid transparent;
+    border-left: 15px solid rgb(71, 77, 164);
+}
+
+.pfeil_3 {
+    margin-left: -14px;
+    border-top: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-left: 15px solid rgb(71, 77, 164);
+}
+
+
+/* Hauptseite, Service und Kontakt */
+
+.caption {
+    position: absolute;
+}
+
+#card-title_navi {
+    font-size: 150%;
+    text-decoration: underline;
+}
+
+.card-body_kontakt {
+    box-shadow: 3px 3px 10px;
+    background-image: linear-gradient(#ebebf7, #ebf7f0);
+    margin-left: 0;
+    margin-bottom: 10px;
+    padding: 20px;
+    width: 400px;
+    border-radius: 3%;
+    border-top-right-radius: 50%;
+    margin-top: 37%;
+}
+
+#carousel_bg {
+    background-color: transparent;
+    border-radius: 2%;
+    padding: 0;
+    margin-bottom: 2vw;
+    z-index: 1;
+}
+
+#carousel_i {
+    border-radius: 5%;
+    padding: 0;
+    margin: 0;
+    box-shadow: grey 2px 2px 5px;
+}
+
+#carouselExampleAutoplaying {
+    margin-left: 1vh;
+    margin-right: 1vh;
+    margin-bottom: -1vw;
+    padding: 1vh;
+    width: 30vw;
+    height: auto;
+}
+
+.carousel-control-prev-icon {
+    margin-left: 20%;
+    margin-inline-start: 60%;
+    margin-top: 20%;
+    background-color: transparent;
+    background-size: 100%;
+    filter: invert(40%);
+    justify-content: start;
+    align-self: flex-start;
+}
+
+.carousel-control-next-icon {
+    margin-right: 20%;
+    margin-inline-end: 60%;
+    margin-top: 20%;
+    background-color: transparent;
+    background-size: 100%;
+    filter: invert(40%);
+    justify-content: end;
+    align-self: flex-start;
+}
+
+.card-body_produkte {
+    box-shadow: grey 3px 3px 10px;
+    background-image: linear-gradient(#ebebf7, #ebf7f0);
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 1vh;
+    border-radius: 3%;
+    border-top-right-radius: 50px;
+    width: auto;
+    height: 100%;
+}
+
+.card-body_produkte:hover {
+    box-shadow: white 3px 3px 10px;
+    background-image: linear-gradient(#c7c7f5, #cdf8df);
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 1vh;
+    border-radius: 3%;
+    border-top-right-radius: 50px;
+    border: grey 1px;
+    border-style: solid;
+    width: auto;
+    height: 100%;
+}
+
+.card-text_seite {
+    font-size: 100%;
+    line-height: 150%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+#img_detail_rahmen {
+    justify-content: left;
+    padding-right: 10px;
+    width: 95%;
+}
+
+
+.card-img-top {
+    height: auto;
+    padding-bottom: 3%;
+    width: 100%;
+}
+
+.card-img-top_detail {
+    height: auto;
+    padding-bottom: 3%;
+    width: 100%;
+    padding: 3px;
+    border-radius: 15px;
+    border-top-right-radius: 50px;
+    box-shadow: grey 1px 1px 5px;
+    border-top-left-radius: 0%;
+    position: relative;
+    align-content: start;
+}
+
+#card_inoxan {
+    width: 60%;
+    padding-top: 5.5%;
+    padding-bottom: 5.5%;
+}
+
+#card_inosan {
+    width: 60%;
+    padding-top: 3%;
+    padding-bottom: 5.5%;
+}
+
+.card-body {
+    color: rgb(0, 0, 0);
+}
+
+#navbereich {
+    width: 30%;
+    padding: 0;
+    align-items: center;
+
+}
+
+.container_produkte {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    gap: 0;
+    z-index: 0;
+}
+
+
+.flexbox {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: auto;
+    max-width: 100%;
+    margin: 0;
+}
+
+.flexbox .fb {
+    display: flex;
+    flex-direction: column;
+    width: 30vh;
+    height: auto;
+    padding: 0.5%;
+    flex: 1 1 30%;
+}
+
+#hygienetipps {
+    padding: 10px;
+    width: 90%;
+    border-radius: 2%;
+    box-shadow: 2px 2px 5px;
+}
+
+/* Produkte */
+
+#pumpentausch {
+    padding-top: 0.65vh;
+    border-radius: 1rem;
+}
+
+#artikel_block {
+    margin-block-start: -5px;
+}
+
+.artikel_ueberschrift {
+    margin-top: 0;
+    font-size: larger;
+    color: rgb(71, 77, 164);
+    font-weight: 600;
+}
+
+#artikel_text {
+    font-size: smaller;
+}
+
+
+#artikel_text h7 {
+    color: red;
+    font-weight: 600;
+}
+
+.atf_var {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.atf_fix {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    white-space: nowrap;
+}
+
+
+.atg {
+    margin: 0;
+    margin-left: 0.5%;
+    margin-bottom: 5px;
+    margin-right: 0;
+    width: 100%;
+    display: table;
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: gray;
+}
+
+.at_thead tr th {
+    background: rgb(71, 77, 164);
+    color: white;
+    padding: 0 12px;
+    font-weight: normal;
+    font-size: small;
+    text-align: left;
+    border-radius: 5px;
+}
+
+.at_head {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+
+.atu {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+#atu_bez {
+    width: 70%;
+    max-width: 800px;
+    vertical-align: inherit;
+    display: table-cell;
+}
+
+#atu_modell {
+    width: 20%;
+    vertical-align: inherit;
+    display: table-cell;
+}
+
+#atu_art {
+    width: 10%;
+    vertical-align: inherit;
+    display: table-cell;
+    word-wrap: normal;
+    white-space: nowrap;
+}
+
+#atu_details {
+    width: 10%;
+    vertical-align: inherit;
+    display: table-cell;
+}
+
+.at_tbody tr td {
+    background: white;
+    color: black;
+    padding: 0 12px;
+    font-weight: normal;
+    font-size: small;
+    text-align: left;
+    border-radius: 5px;
+}
+
+/* Texte */
+
+.card h6 {
+    white-space: normal;
+    word-wrap: break-word;
+    font-size: 100%;
+}
+
+#mig {
+    height: 3hw;
+    margin-top: 2%;
+    text-align: center;
+    white-space: nowrap;
+    word-wrap: break-word;
+}
+
+#mig h4 {
+    text-align: center;
+    white-space: break-spaces;
+    word-wrap: break-word;
+}
+
+#mig h2 :nth-child(1) {
+    color: black;
+    text-shadow: grey 2px 2px 2px;
+
+}
+
+#mig h2 :nth-child(2) {
+    color: red;
+    text-shadow: grey 2px 2px 2px;
+}
+
+#mig h2 :nth-child(3) {
+    color: yellow;
+    text-shadow: grey 2px 2px 2px;
+}
+
+.fliesstext {
+    text-align: justify;
+}
+
+.infobox {
+    justify-content: right;
+    text-align: right;
+    position: sticky;
+    top: 20px;
+    padding: 0;
+    margin: 0;
+
+}
+
+#infobox_text {
+    text-align: center;
+}
+
+
+/* Gallery */
+
+#box_gallery {
+    width: 100%;
+    height: auto;
+}
+
+#card_gallery {
+    background-image: linear-gradient(rgb(71, 77, 164), rgb(0, 186, 174));
+    height: 100%;
+    box-shadow: 2px 2px 5px gray;
+    border-radius: 15px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 0%
+}
+
+#card_inlay_gallery {
+    padding: 3px;
+
+}
+
+#img_gallery {
+    padding: 3px;
+    padding-bottom: 0;
+    border-radius: 15px;
+    border-top-right-radius: 50px;
+    box-shadow: grey 1px 1px 5px;
+    border-top-left-radius: 0%
+}
+
+
+#card_gallery:hover {
+    background-image: linear-gradient(#ffffff, rgb(0, 186, 174));
+}
+
+.btn_gallery {
+    width: 100%;
+    height: 100px;
+    padding: 5px;
+    margin-top: 2px;
+    border-radius: 15px;
+    border-top-left-radius: 0%;
+    cursor: pointer;
+    background: transparent;
+    border: 0px solid #91C9FF;
+    outline: none;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 500;
+    font-size: 11pt;
+}
+
+.info_gallery {
+    padding: 0;
+    padding-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Linkangaben */
+
+[data-title]:hover:after {
+    opacity: 1;
+    transition: all 0.1s ease 0.5s;
+    visibility: visible;
+}
+
+[data-title]:after {
+    content: attr(data-title);
+    position: absolute;
+    bottom: -1.45em;
+    left: 103%;
+    padding: 4px 4px 4px 8px;
+    color: rgb(0, 0, 0);
+    white-space: normal;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0px 0px 4px #222;
+    -webkit-box-shadow: 0px 0px 4px #222;
+    box-shadow: 0px 0px 4px #222;
+    background-image: -moz-linear-gradient(top, #ffffff, rgb(0, 186, 174));
+    background-image: -webkit-linear-gradient(top, #ffffff, rgb(0, 186, 174));
+    background-image: -moz-linear-gradient(top, #ffffff, rgb(0, 186, 174));
+    background-image: -ms-linear-gradient(top, #ffffff, rgb(0, 186, 174));
+    background-image: -o-linear-gradient(top, #ffffff, rgb(0, 186, 174));
+    background-image: linear-gradient(#ffffff, rgb(0, 186, 174));
+    opacity: 0;
+    z-index: 99999;
+    visibility: hidden;
+}
+
+[data-title] {
+    position: relative;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+.dropdown-item:active {
+    background-color: #138a84;
+    color: black;
+}
+
+#aktiv {
+    background-color: #05b2aa;
+    color: white;
+}
+
+.btn_gallery:link {
+    color: rgb(71, 77, 164);
+}
+
+.btn_gallery::visited {
+    color: rgb(71, 77, 164);
+}
+
+.btn_gallery:hover {
+    color: rgb(71, 77, 164);
+}
+
+.btn_gallery:active {
+    color: rgb(71, 77, 164);
+}
+
+
+@media (max-width: 575.97px) {
+
+    .Topper {
+        margin-top: 0px;
+        margin-bottom: 5px;
+    }
+
+    #text_topper {
+        text-shadow: 2px 2px 5px white;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    #text_topper h3 {
+        font-size: 80%;
+    }
+
+    #balken_links {
+        margin-top: 1px;
+        margin-bottom: 1px;
+        padding: 0;
+        height: 10px;
+        background-color: #05b2aa;
+    }
+
+    #balken_rechts {
+        margin-top: 1px;
+        margin-bottom: 1px;
+        padding: 0;
+        height: 10px;
+        background-color: #05b2aa;
+    }
+
+
+    .navbar {
+        background-color: white;
+        min-height: 50px;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        font-size: small;
+        font-family: sans-serif;
+        box-shadow: 0px 0px 15px;
+    }
+
+    #brand_leiste {
+        width: auto;
+        justify-content: left;
+    }
+
+    #brand_inosan {
+        width: 43vw;
+        padding-top: 22px;
+        padding-bottom: 26px;
+        padding-left: 0;
+        position: relative;
+
+    }
+
+    #brand_inoxan {
+        width: 43vw;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 0;
+        position: relative;
+
+    }
+
+    #brand_gel {
+        width: 70vw;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 0;
+        position: relative;
+
+    }
+
+    #navbar_brand {
+        width: 100%;
+        border-top-right-radius: 30%;
+        box-shadow: grey 2px 2px 5px;
+    }
+
+
+    #nav_gallery_leiste {
+        width: 1.5%;
+    }
+
+    .navbar-collapse {
+        margin: 0px;
+        background-color: transparent;
+        border-style: none;
+    }
+
+    #gallery {
+        z-index: 0;
+        width: 100vw;
+        padding-left: 68px;
+        padding-right: 20px;
+        height: auto;
+        position: static;
+        margin-top: -8px;
+    }
+
+    .btn_gallery {
+        width: 100%;
+        height: 100px;
+        padding: 5px;
+        margin-top: 2px;
+        border-radius: 15px;
+        border-top-left-radius: 0%;
+        cursor: pointer;
+        background: transparent;
+        border: 0px solid #91C9FF;
+        outline: none;
+        color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        vertical-align: middle;
+        font-weight: 500;
+        font-size: 15pt;
+    }
+
+    #titel {
+        background-position-x: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: auto;
+        height: 100%;
+    }
+
+    #kontakt {
+        align-content: center;
+    }
+
+    #container_caption {
+        padding-left: 2.7%;
+        padding-right: 2.7%;
+        margin-top: -4vw;
+        z-index: 1;
+    }
+
+    #cards {
+        width: 29.8%;
+        height: 6.0rem;
+    }
+
+    .card-body_kontakt {
+        box-shadow: 3px 3px 10px;
+        background-image: linear-gradient(#ebebf7, #ebf7f0);
+        margin-left: 0;
+        margin-bottom: 10px;
+        padding: 2%;
+        width: 100%;
+        height: auto;
+        border-radius: 3%;
+        margin-top: 60%;
+    }
+
+
+    .card-title_navi {
+        word-wrap: break-word;
+        font-size: 8pt;
+        line-height: 100%;
+    }
+
+    .card-text_navi {
+        font-size: 70%;
+        line-height: 100%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+
+    .card-text_seite {
+        white-space: normal;
+        word-wrap: break-word;
+        font-size: 77%;
+    }
+
+    #hygienetipps h4 {
+        padding: 0;
+        margin: 0;
+        font-size: 72%;
+    }
+
+    .card h6 {
+        white-space: normal;
+        word-wrap: break-word;
+        font-size: 77%;
+    }
+
+    #gel_logo {
+        height: 7vw;
+        width: auto;
+    }
+
+    #gel_logo_start {
+        height: auto;
+        width: 100%;
+        margin-top: 4%;
+        margin-bottom: 3%;
+    }
+
+    #mig h2 {
+        font-weight: 700;
+        font-size: 140%;
+        margin-bottom: 5%;
+    }
+
+
+}
+
+@media (min-width: 575.98px) {
+    .navbar {
+        background-color: white;
+        min-height: 80px;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        font-size: small;
+        font-family: sans-serif;
+        box-shadow: 0px 0px 15px;
+    }
+
+    #brand_leiste {
+        width: auto;
+        justify-content: left;
+    }
+
+    #brand_inosan {
+        width: 45vw;
+        padding-top: 30px;
+        padding-bottom: 36px;
+        padding-left: 0;
+        position: relative;
+
+    }
+
+    #brand_inoxan {
+        width: 45vw;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 0;
+        position: relative;
+
+    }
+
+    #brand_gel {
+        width: 70vw;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 0;
+        position: relative;
+
+    }
+
+    #nav_gallery_leiste {
+        width: 1.5%;
+    }
+
+    #navbar_brand {
+        width: 100%;
+        border-top-right-radius: 20%;
+        box-shadow: grey 2px 2px 5px;
+    }
+
+    .navbar-collapse {
+        margin: 0px;
+        background-color: transparent;
+        border-style: none;
+    }
+
+    #gallery {
+        z-index: 0;
+        width: 200%;
+        padding-left: 15%;
+        height: auto;
+        position: static;
+        margin-top: -8px;
+    }
+
+    #titel {
+        background-position-x: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: auto;
+        height: 480px;
+    }
+
+    #kontakt {
+        align-content: center;
+    }
+
+    #container_caption {
+        padding-left: 2.3%;
+        padding-right: 2.3%;
+        margin-top: -4vw;
+        z-index: 1;
+    }
+
+    #container_caption {
+        padding-left: 2.3%;
+        padding-right: 2.3%;
+        margin-top: -4vw;
+        z-index: 1;
+    }
+
+    #cards {
+        width: 30%;
+        height: 7rem;
+    }
+
+    .card-body_kontakt {
+        box-shadow: 3px 3px 10px;
+        background-image: linear-gradient(#ebebf7, #ebf7f0);
+        margin-left: 0;
+        margin-bottom: 10px;
+        padding: 5px;
+        width: 100%;
+        height: auto;
+        border-radius: 3%;
+        margin-top: 60%;
+    }
+
+    .card-title_navi {
+        font-size: small;
+        line-height: 100%;
+    }
+
+    .card-text_navi {
+        font-size: 70%;
+        line-height: 100%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+
+    #gel_logo {
+        height: 7vw;
+        width: auto;
+    }
+
+    #gel_logo_start {
+        height: auto;
+        width: 100%;
+        margin-top: 7%;
+        margin-bottom: 2%;
+    }
+
+    #text_topper {
+        text-align: center;
+        padding-top: 1vh;
+    }
+
+    #mig h2 {
+        font-weight: 700;
+        font-size: 130%;
+        margin-bottom: 5%;
+    }
+
+
+
+
+}
+
+@media (min-width: 767.98px) {
+
+    #titel {
+        background-position-x: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: auto;
+        height: 420px;
+    }
+
+    #gel_logo {
+        height: 40px;
+        width: auto;
+    }
+
+    #gel_logo_start {
+        height: auto;
+        width: 100%;
+        margin: 2%
+    }
+
+    #text_topper {
+        text-align: center;
+        text-shadow: 2px 2px 5px white;
+        padding-left: 1%;
+        padding-right: 1%;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .navbar {
+        background-color: white;
+        min-height: 80px;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        font-size: small;
+        font-family: sans-serif;
+    }
+
+    #brand_leiste {
+        width: auto;
+        justify-content: left;
+    }
+
+    #brand_inosan {
+        width: 300px;
+        padding-top: 30px;
+        padding-bottom: 36px;
+        padding-left: 0;
+        position: relative;
+
+    }
+
+    #brand_inoxan {
+        width: 300px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 0;
+        position: relative;
+
+    }
+
+    #brand_gel {
+        width: 500px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 0;
+        position: relative;
+
+    }
+
+    #nav_gallery_leiste {
+        width: 1%;
+    }
+
+    #navbar_brand {
+        width: 100%;
+        border-top-right-radius: 20%;
+        box-shadow: grey 2px 2px 5px;
+    }
+
+    .navbar-collapse {
+        margin: 0px;
+        background-color: transparent;
+        border-style: none;
+    }
+
+    #gallery {
+        z-index: 0;
+        width: 150%;
+        padding-left: 12%;
+        height: auto;
+        position: static;
+        margin-top: -8px;
+    }
+
+    #container_caption {
+        padding-left: 1.7%;
+        padding-right: 1.7%;
+        margin-top: -4vw;
+        z-index: 1;
+    }
+
+    #cards {
+        width: 31%;
+        height: 7rem;
+    }
+
+    .card-body_kontakt {
+        box-shadow: 3px 3px 10px;
+        background-image: linear-gradient(#ebebf7, #ebf7f0);
+        margin-left: 0px;
+        margin-bottom: 10px;
+        padding: 5px;
+        width: 200px;
+        height: auto;
+        border-radius: 3%;
+        border-top-right-radius: 30%;
+        margin-top: 37%;
+    }
+
+    .card-title_navi {
+        font-size: small;
+        line-height: 100%;
+    }
+
+    .card-text_navi {
+        font-size: 70%;
+        line-height: 100%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+
+    #mig h2 {
+        font-weight: 700;
+        font-size: 130%;
+        margin-bottom: 5%;
+    }
+
+
+
+
+}
+
+@media (min-width: 991.98px) {
+    #titel {
+        background-position-x: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: auto;
+        height: 560px;
+    }
+
+    #gel_logo {
+        height: 40px;
+        width: auto;
+    }
+
+    #gel_logo_start {
+        height: auto;
+        width: 100%;
+        margin: 2%
+    }
+
+    #text_topper {
+        text-align: center;
+        text-shadow: 2px 2px 5px white;
+        padding-left: 1%;
+        padding-right: 1%;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .navbar {
+        background-color: white;
+        min-height: 80px;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        font-size: medium;
+        font-family: sans-serif;
+    }
+
+    #brand_leiste {
+        width: auto;
+        justify-content: left;
+    }
+
+    #brand_inosan {
+        width: 300px;
+        padding-top: 30px;
+        padding-bottom: 36px;
+        padding-left: 0;
+        position: relative;
+
+    }
+
+    #brand_inoxan {
+        width: 300px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 0;
+        position: relative;
+
+    }
+
+    #brand_gel {
+        width: 500px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 0;
+        position: relative;
+
+    }
+
+    #nav_gallery_leiste {
+        width: 11.5%;
+    }
+
+    #navbar_brand {
+        border-top-right-radius: 20%;
+        box-shadow: grey 2px 2px 5px;
+    }
+
+    .navbar-collapse {
+        margin: 0px;
+        background-color: transparent;
+        border-style: none;
+    }
+
+    #gallery {
+        z-index: 0;
+        width: 110%;
+        padding-left: 29%;
+        height: auto;
+        position: static;
+        margin-top: -8px;
+    }
+
+    #container_caption {
+        padding-left: 1.3%;
+        padding-right: 1.3%;
+        margin-top: -4vw;
+        z-index: 1;
+    }
+
+    #cards {
+        width: 31.6%;
+        height: 9rem;
+    }
+
+    .card-body_kontakt {
+        box-shadow: 3px 3px 10px;
+        background-image: linear-gradient(#ebebf7, #ebf7f0);
+        margin-left: 0;
+        margin-bottom: 10px;
+        padding: 10px;
+        width: 250px;
+        height: auto;
+        border-radius: 3%;
+        border-top-right-radius: 40%;
+        margin-top: 39%;
+    }
+
+    .card-title_navi {
+        font-size: large;
+    }
+
+    .card-text_navi {
+        font-size: 70%;
+        line-height: 100%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+
+    #mig h2 {
+        font-weight: 700;
+        font-size: 180%;
+        margin-bottom: 5%;
+    }
+
+
+
+
+}
+
+@media (min-width: 1199.98px) {
+    .navbar {
+        background-color: white;
+        min-height: 80px;
+        max-height: 80px;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        font-size: medium;
+        font-family: sans-serif;
+    }
+
+    #brand_leiste {
+        width: auto;
+        justify-content: left;
+    }
+
+    #brand_inosan {
+        width: 300px;
+        padding-top: 30px;
+        padding-bottom: 36px;
+        padding-left: 0;
+        position: relative;
+
+    }
+
+    #brand_inoxan {
+        width: 300px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 0;
+        position: relative;
+
+    }
+
+    #brand_gel {
+        width: 500px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 0;
+        position: relative;
+
+    }
+
+    #nav_gallery_leiste {
+        width: 17.4%;
+    }
+
+    #navbar_brand {
+        border-top-right-radius: 20%;
+        box-shadow: grey 2px 2px 5px;
+    }
+
+    .navbar-collapse {
+        margin: 0px;
+        background-color: transparent;
+        border-style: none;
+    }
+
+    #gallery {
+        z-index: 0;
+        width: 100%;
+        padding-left: 15%;
+        height: auto;
+        position: static;
+        margin-top: -8px;
+    }
+
+    #titel {
+        background-position-x: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: auto;
+        height: 670px;
+    }
+
+    #gel_logo {
+        height: 50px;
+        width: auto;
+    }
+
+    #gel_logo_start {
+        height: auto;
+        width: 100%;
+        margin: 2%
+    }
+
+    #text_topper {
+        text-align: center;
+        text-shadow: 2px 2px 5px white;
+        padding-left: 1%;
+        padding-right: 1%;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    #container_caption {
+        padding-left: 1.1%;
+        padding-right: 1.1%;
+        margin-top: -4vw;
+        z-index: 1;
+    }
+
+    #cards {
+        width: 31.8%;
+        height: 10rem;
+    }
+
+    .card-body_kontakt {
+        box-shadow: 3px 3px 10px;
+        background-image: linear-gradient(#ebebf7, #ebf7f0);
+        margin-left: 0;
+        margin-bottom: 10px;
+        padding: 20px;
+        width: 300px;
+        border-radius: 3%;
+        border-top-right-radius: 50%;
+        margin-top: 36%;
+    }
+
+    .card-title_navi {
+        font-size: large;
+    }
+
+    .card-text_navi {
+        font-size: 80%;
+        line-height: 110%;
+        margin-top: 6%;
+        margin-bottom: 6%;
+    }
+
+    #mig h2 {
+        font-weight: 700;
+        font-size: 200%;
+        margin-bottom: 5%;
+    }
+
+
+
+}
+
+@media (min-width: 1399.98px) {
+
+    .navbar {
+        background-color: white;
+        min-height: 80px;
+        max-height: 80px;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        font-size: large;
+        font-family: sans-serif;
+
+    }
+
+    #brand_leiste {
+        width: auto;
+        justify-content: left;
+    }
+
+    #brand_inosan {
+        width: 300px;
+        padding-top: 30px;
+        padding-bottom: 36px;
+        padding-left: 0;
+        position: relative;
+
+    }
+
+    #brand_inoxan {
+        width: 300px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 0;
+        position: relative;
+
+    }
+
+    #brand_gel {
+        width: 500px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 0;
+        position: relative;
+
+    }
+
+    #nav_gallery_leiste {
+        width: 18%;
+    }
+
+    #navbar_brand {
+        border-top-right-radius: 20%;
+        box-shadow: grey 2px 2px 5px;
+    }
+
+    .navbar-collapse {
+        margin: 0px;
+        background-color: transparent;
+        border-style: none;
+    }
+
+    #gallery {
+        z-index: 0;
+        width: 100%;
+        padding-left: 9.5%;
+        height: auto;
+        position: static;
+        margin-top: -8px;
+    }
+
+    #titel {
+        background-position-x: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: auto;
+        height: 770px;
+    }
+
+    #gel_logo {
+        height: 50px;
+        width: auto;
+    }
+
+    #gel_logo_start {
+        height: auto;
+        width: 100%;
+        margin: 2%
+    }
+
+    #text_topper {
+        text-align: center;
+        text-shadow: 2px 2px 5px white;
+        padding-left: 1%;
+        padding-right: 1%;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    #container_caption {
+        padding-left: 1%;
+        padding-right: 1%;
+        margin-top: -4vw;
+        z-index: 1;
+    }
+
+    #cards {
+        width: 32.0%;
+        height: 13rem;
+    }
+
+    .card-body_kontakt {
+        box-shadow: 3px 3px 10px;
+        background-image: linear-gradient(#ebebf7, #ebf7f0);
+        margin-left: 0;
+        margin-bottom: 10px;
+        padding: 20px;
+        width: 300px;
+        border-radius: 3%;
+        border-top-right-radius: 50%;
+        margin-top: 37%;
+    }
+
+    .card-title_navi {
+        font-size: x-large;
+    }
+
+    .card-text_navi {
+        font-size: 100%;
+        line-height: 110%;
+        margin-top: 6%;
+        margin-bottom: 6%;
+    }
+
+
+
+
+}
