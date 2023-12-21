@@ -1,93 +1,21 @@
-.cylinder {
-  display: flex;
-  justify-content: center;
-  padding-top: 500px;
-  width: 100px; /* Durchmesser des Zylinders */
-  height: 1000px; /* Höhe des Zylinders */
-  perspective: 500px;
-  position: relative;
+a {
+  text-decoration: none;
+  color: black;
 }
 
-.step {
-  width: 100%; /* Breite der Stufe */
-  height: 40px; /* Höhe der Stufe */
-  position: absolute;
-  background-color: #FFA500; /* Farbe der Stufen */
-  transform-origin: center center 0; /* Zentrierung und Positionierung der Stufen */
-  transform-style: preserve-3d;
-  animation: rotateCylinder 8s infinite linear, glimmer 2s infinite alternate; /* Rotationsanimation und Farbwechsel */
+a:link {
+  color: black;
 }
 
-@keyframes rotateCylinder {
-  from {
-    transform: rotateY(0deg);
-  }
-  to {
-    transform: rotateY(360deg);
-  }
+a:hover {
+  color:  red;
+  
 }
 
-@keyframes glimmer {
-  0% {
-    background-color: #FFA500; /* Startfarbe */
-  }
-  100% {
-    background-color: #FF5733; /* Endfarbe */
-  }
+a:active {
+  color: blue;
 }
 
-/* Platzierung der einzelnen Stufen */
-.step {
-  transform: translateX(calc(50% - 50px)); /* Stufen horizontal zentrieren */
-  border-radius: 5px;
-  top: calc(50% - 20px); /* Abstand der Stufen von oben berechnen */
-}
-
-/* Berechnung der vertikalen Positionen der einzelnen Stufen */
-.step:nth-child(1) {
-  transform: translateX(calc(50% - 50px)) translateY(calc(50% - 300px)) rotateY(0deg);
-}
-
-.step:nth-child(2) {
-  transform: translateX(calc(50% - 50px)) translateY(calc(50% - 300px)) rotateY(30deg);
-}
-
-.step:nth-child(3) {
-  transform: translateX(calc(50% - 50px)) translateY(calc(50% - 300px)) rotateY(60deg);
-}
-
-.step:nth-child(4) {
-  transform: translateX(calc(50% - 50px)) translateY(calc(50% - 300px)) rotateY(90deg);
-}
-
-.step:nth-child(5) {
-  transform: translateX(calc(50% - 50px)) translateY(calc(50% - 300px)) rotateY(120deg);
-}
-
-.step:nth-child(6) {
-  transform: translateX(calc(50% - 50px)) translateY(calc(50% - 300px)) rotateY(150deg);
-}
-
-.step:nth-child(7) {
-  transform: translateX(calc(50% - 50px)) translateY(calc(50% - 300px)) rotateY(180deg);
-}
-
-.step:nth-child(8) {
-  transform: translateX(calc(50% - 50px)) translateY(calc(50% - 300px)) rotateY(210deg);
-}
-
-.step:nth-child(9) {
-  transform: translateX(calc(50% - 50px)) translateY(calc(50% - 300px)) rotateY(240deg);
-}
-
-.step:nth-child(10) {
-  transform: translateX(calc(50% - 50px)) translateY(calc(50% - 300px)) rotateY(270deg);
-}
-
-.step:nth-child(11) {
-  transform: translateX(calc(50% - 50px)) translateY(calc(50% - 300px)) rotateY(300deg);
-}
-
-.step:nth-child(12) {
-  transform: translateX(calc(50% - 50px)) translateY(calc(50% - 300px)) rotateY(330deg);
+a:visited {
+  color: green;
 }
